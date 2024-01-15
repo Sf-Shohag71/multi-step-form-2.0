@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multistep Form 2.0</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form1">
+        <h3>CREATE ACCOUNT</h3>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          id="password"
+          required
+        />
+        <input
+          type="password"
+          name="confirm-password"
+          placeholder="Confirm password"
+          id="confirm-password"
+          required
+        />
+        <div class="btn-box">
+          <button type="button" id="next1">Next</button>
+        </div>
+      </form>
+      <!-- Step-2 -->
+      <form id="form2">
+        <h3>SOCIAL LINKS</h3>
+        <input
+          type="text"
+          name="facebook"
+          placeholder="Facebook profile link"
+          id="facebook"
+        />
+        <input
+          type="text"
+          name="linkedin"
+          placeholder="Linkedin profile link"
+          id="linkedin"
+        />
+        <input
+          type="text"
+          name="instagram"
+          placeholder="Instagram profile link"
+          id="instagram"
+        />
+        <div class="btn-box">
+          <button type="button" id="back1">Back</button>
+          <button type="button" id="next2">Next</button>
+        </div>
+      </form>
+      <!-- Step-3 -->
+      <form id="form3">
+        <h3>PERSONAL INFO</h3>
+        <input
+          type="text"
+          name="fname"
+          placeholder="First name"
+          id="fname"
+          required
+        />
+        <input
+          type="text"
+          name="lname"
+          placeholder="Last name"
+          id="linkedin"
+          required
+        />
+        <input
+          type="text"
+          name="birth"
+          placeholder="Date of birth"
+          id="birth"
+        />
+        <div class="btn-box">
+          <button type="button" id="back2">Back</button>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col">Step 1</div>
+        <div class="step-col">Step 2</div>
+        <div class="step-col">Step 3</div>
+      </div>
+    </div>
+
+    <!-- javascript files -->
+    <script src="script.js"></script>
+  </body>
+</html>
